@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* 1650 이상 */
+
+@media screen and (min-width:1650px)  {
+    .container {
+        width: 1596px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+    }    
+
+     /* text */
+    h3 {
+        font-size: 40px;
+        margin-bottom: 100px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    strong{
+        font-size: 36px;
+    }
+    span{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    p, a {
+        font-size: 22px;
+    }
+    
+    /* Header */
+    header .logo h1 a{
+        width: 200px;
+        height: 100px;
+    }
+
+    /* Visual */
+    .visual_section{
+        height: 1400px;
+    }
+    .visual_section .container{
+        position: absolute;
+        top: 350px;
+    }
+
+    /* About JYP */
+    .about_img .about_image {
+        height: 800px;
+    }
+    
+    /* Artist */
+    .artist_section .swiper-pagination-bullet{
+        width: 20px;
+        height: 20px;
+    }
+    .swiper-slide .artist-image {
+        width: 100%;
+        height: 1400px;
+        margin-bottom: 50px;
+    }
+    .swiper-slide .artist_img1, .swiper-slide .artist_img2, .swiper-slide .artist_img3, .swiper-slide .artist_img4{
+        height: 1400px;
+    } 
+
+    /* Album */
+    .Album_section{
+        margin-top: 800px;
+    }
+    .album_img1, .album_img2, .album_img3, .album_img4, .album_img5{
+        height: 800px;
+    } 
+    .swiper.album .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+    }
+
+    /* News */
+    .news_img {
+        width: 100%;
+        height: 450px;
+        margin-top: 10px;
+    }
+    .news_img1, .news_img2, .news_img3{
+        height: 450px;
+        margin: 0 10px;
+    }
+
+    /* Concert */
+    .concert_box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
+        align-items: center;
+    }
+    .concert_list:nth-child(1) h4 {
+        letter-spacing: -0.5px;
+        max-width: 100%; 
+        white-space: nowrap; 
+    }
+
+    /* Footer */
+    .footer_logo {
+        width: 250px;
+        height: 150px;
+        margin-left: 10%;
+    }
+    .footer_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 10% 10px 20%;
+    }
+}

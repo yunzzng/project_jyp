@@ -1,0 +1,268 @@
+@charset "Utf-8";
+/* 1024이상 */
+
+@media screen and (min-width:1024px){
+    .container {
+        width: 90.23%;
+    }   
+
+    /* text */
+    h3 {
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    strong{
+        font-size: 32px;
+    }
+    span{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    p, a {
+        font-size: 20px;
+    }
+
+    /* Header */
+    header .logo h1 a{
+        width: 180px;
+        height: 80px;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    header .container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        padding: 10px 20px; 
+    }
+    header .logo {
+        flex: 1; 
+        display: flex;
+        align-items: center; 
+    }
+    header nav {
+        flex: 3; 
+        display: flex;
+        justify-content: space-around; 
+    }
+    .nav {
+        line-height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding-top: 0;
+        background: none;
+    }
+    .nav, .gnb {
+        overflow: visible; 
+    }
+    .gnb > li:hover .nav_back {
+        height: auto;
+    }
+    .gnb > li > ul {
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        display: none;
+        margin-top: 0; 
+        padding: 5px 0;
+        z-index: 10; 
+    }
+    .gnb {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end; 
+    }
+    .gnb > li {
+        position: relative;
+        margin: 0;
+        padding: 0 5px;
+        text-align: center;
+    }
+    .gnb > li > ul {
+        display: none;
+        background-color: white;
+        width: 100%;
+    }
+    .gnb > li:hover > a{
+        color: white;
+        background: #1491D5;
+        padding: 0 5px;
+        border-radius: 10px;
+    }
+    .gnb > li:hover > ul {
+        display: block;
+    }
+    .nav .gnb > li {
+        position: relative;
+    }
+    .gnb > li > a {
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration: none;
+        margin: 0 10px;
+        pointer-events: none;
+    }
+    .gnb > li > a::after {
+        content: none; 
+    }
+    .gnb > li > ul > li > a{
+        padding: 5px 10px;
+    }
+
+    /* Visual */
+    .visual_section{
+        height: 750px;
+    }
+
+    /* About JYP */
+    .about {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .about .about_img {
+        height: 700px;
+        width: 50%; 
+        order: 1;
+        margin-right: 15px;
+    }
+    .about .title {
+        width: 50%; 
+        order: 2; 
+        margin-left: 15px;
+    }
+    .about .title .about_text{
+        margin-top: 0;
+        text-align: left;
+    }
+
+    /* Artist */
+    .artist_section .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+    }
+    .artist_section .swiper-pagination-bullet{
+        width: 10px;
+        height: 10px;
+    }
+    .swiper-slide .artist-image {
+        width: 100%;
+        height: 900px;
+        margin-bottom: 50px;
+    }
+    .swiper-slide .artist_img1, .swiper-slide .artist_img2, .swiper-slide .artist_img3, .swiper-slide .artist_img4{
+        height: 900px;
+    } 
+
+    /* Album */
+    .swiper.album .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+    }
+    
+    /* News */
+    .news_img {
+        width: 100%;
+        height: 350px;
+    }
+    .news_img1, .news_img2,.news_img3{
+        height: 350px;
+    }
+    .news_list {
+        height: 600px;
+        display: flex;
+        flex-direction: row; 
+        margin-bottom: 40px;
+    }
+    .news_img, .news_info{
+        flex: 1;
+        text-align: left;
+    }
+    .news_list.reverse .news_info{
+        text-align: right;
+    }
+    .news_list.reverse {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Concert */
+    .concert_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        align-items: center;
+    }
+    .concert_list{
+        display: grid;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .concert_list:hover {
+        transform: scale(1.05);
+    }
+    .concert-img {
+        width: 100%;
+        height: 250px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .concert {
+        text-align: center;
+    }
+    .concert_line {
+        border-bottom: 2px solid #007bff;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .concert_list.reverse {
+        flex-direction: row-reverse;
+        align-items: center;
+        display: block; 
+    }
+    .concert_list.reverse .concert{
+        text-align: center;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 400px;
+        padding: 100px ;
+    }
+    .footer_logo {
+        width: 200px;
+        height: 120px;
+        margin-left: 5%;
+    }
+    .footer_right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+    }
+    .footer_sns {
+        display: flex;
+        gap: 15px; 
+    }
+    .sns1, .sns2, .sns3{
+        width: 60px;
+        height: 60px;
+    }
+}
